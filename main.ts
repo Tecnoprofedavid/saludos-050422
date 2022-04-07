@@ -1,8 +1,9 @@
 input.onGesture(Gesture.LogoUp, function () {
     basic.showIcon(IconNames.Sad)
-    basic.pause(1000)
+    basic.pause(2000)
     basic.showIcon(IconNames.No)
     basic.pause(1000)
+    music.playMelody("C5 B C5 G C5 E C5 C ", 120)
 })
 input.onButtonPressed(Button.A, function () {
     minutos = 0
@@ -133,8 +134,10 @@ input.onButtonPressed(Button.B, function () {
 })
 input.onGesture(Gesture.LogoDown, function () {
     basic.showIcon(IconNames.Happy)
-    basic.pause(1000)
+    basic.pause(2000)
     basic.showIcon(IconNames.Heart)
+    basic.pause(1000)
+    music.playMelody("C F D G E A F B ", 120)
 })
 let dados = 0
 let piedra = 0
